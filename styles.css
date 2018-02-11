@@ -1,0 +1,164 @@
+html {
+  margin:-10px;
+  padding: 0;
+  border: 0;
+}
+
+p {
+  color: #3e4849;
+}
+
+button {
+  background-color: #1ca8c7;
+  color:white;
+  align-self: center;
+  font-size: 1.5em;
+  height: 77px;
+  width: 270px;
+  margin-bottom: 100px;
+  margin-top: 80px;
+}
+
+* { box-sizing: border-box; }
+
+.header {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+  align-self: center;
+  color: #656d6d;
+  font-family: 'Roboto', sans-serif;
+  height: 130px;
+
+}
+
+.header h1 {
+    font-size: 2.45em;
+    align-self: center;
+    margin-left: 20%;
+}
+
+.small-menu {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+  margin-right: 20%;
+}
+
+.small-menu h2 {
+    color: #656d6d;  
+    font-size: 1.3em;
+    align-self: center;
+ }
+
+a:link {
+    text-decoration: none;
+    color:#21a6cb;
+}
+
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+/* ---- grid ---- */
+
+.grid {
+  background: #f2f1ef;
+  margin: 0 10%;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 32%;
+  word-wrap: break-word;
+}
+
+.gutter-sizer {
+  width: 2%;
+}
+
+.grid-styles {
+  padding:28px 28px 0 28px;
+}
+
+.grid-styles h2 {
+  font-size: 2em;
+}
+
+.grid-styles a {
+  font-size: 1.4em;
+}
+
+.grid-item {
+  float: left;
+  background: #fff;
+  margin-bottom: 30px;
+}
+
+.gray {
+	margin:0;
+  background-color: #f2f1ef;
+  padding-top: 5%;
+  width:100%;
+}
+
+
+
+.card-image {
+  width: 100%;
+}
+
+.linkholder {
+  margin-top:32px;
+  margin-bottom: 38px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+}
+
+
+.copyright {
+  font-size: 1.125em;
+}
+
+
+@media (max-width: 950px) {
+  .grid-sizer,
+  .grid-item {
+  width: 48%;
+  word-wrap: break-word;
+}
+
+}
+
+@media (max-width: 550px) {
+  .header {
+    display: inline-block;
+    height: auto;
+  }
+
+  .small-menu {
+    display: flex;
+    align-self: auto;
+    justify-content: center;
+    margin-left: 10%;
+
+  }
+
+  .grid-sizer,
+  .grid-item {
+  width: 100%;
+  word-wrap: break-word;
+}
+
+
